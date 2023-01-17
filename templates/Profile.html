@@ -1,0 +1,82 @@
+<title>Profile</title>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!DOCTYPE html>
+    <head lang="en">
+        <head>
+            <div class="container-fluid mt-3" align="center">
+                <h1>PROFILE</h1>
+                <h4>อย่าตัดสินต้นไม้ที่กำลังโต อย่าตัดสินใครว่าโง่ขณะที่เขากำลังเรียนรู้</h4>
+            </div>
+            <title>Profile</title>
+
+        </head>
+    </head>
+    <body>
+
+
+
+    <div class="text-center">
+        <img src="{% static 'images/Profile/ProfiileButterfly.png' %}" height="475" width="950">
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Panupong Namyotee</h3>
+                <h5>ภาณุพงศ์ นามโยธี</h5>
+                <p>เกิดวันที่ 30 สิงหาคม 2544
+                    สัญชาติ : ไทย ศาสนา : พุทธชัวร์แฮนซัพ ปัจจุบันอายุ 21 ปี</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Address</h3>
+                <p>ตามทะเบียนบ้าน : 37 บ้านหาดทับยา ต.ท่ามะเฟือง อ.พิชัย จ.อุตรดิตถ์ </p>
+                <p>บ้านที่อาศัยปัจจุบัน : 1 บ้านเหล่ายูง ต.โคกล่าม อ.จตุรพักรพิมาน จ.ร้อยเอ็ด</p>
+                <p>ที่ปัจจุบัน :</b> 171/272 ชาตะผดุง 16 อ.ในเมือง จ.ขอนแก่น</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>ช่องทางการติดต่อ</h3>
+
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary border w-100" href="https://www.facebook.com/artdaghngdang/">Facebook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-danger border w-100" href="https://www.instagram.com/toraoxx/?next=%2F">Instagram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-warning border w-100">Tell : 0993753931</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-dark border w-100" href="#">Email : panupong.na@rmuti.ac.th</a>
+                    </li>
+                </ul>
+                <br>
+                <hr class="d-sm-none">
+                </di</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="background-color: #009688">
+            <div class="col-lg-12">
+                {% include 'header.html' %}
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    </body>
+    </head>
+{% endblock %}
