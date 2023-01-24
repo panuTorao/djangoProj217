@@ -1,0 +1,49 @@
+<title>showMyData</title>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <br>
+    <div class="text-center">
+    <h2 class="text-center">Show Data</h2>
+    <br>
+    <p><strong>ID: </strong>{{ ID }}</p>
+    <p><strong>Name: </strong>{{ name }}</p>
+    <p><strong>Sex: </strong>{{ Sex }}</p>
+    <p><strong>Height: </strong>{{ Height }}</p>
+    <p><strong>weight: </strong>{{ weight }}</p>
+    <p><strong>Food: </strong>{{ Food }}</p>
+    <p><strong>Color: </strong>{{ Color }}</p>
+    <p><strong>domicile: </strong>{{ domicile }}</p>
+    <p><strong>Dream: </strong>{{ Dream }}</p>
+    <p><strong>Pet: </strong>{{ Pet }}</p>
+    </div>
+    <head>
+    <br>
+        <h2 class="text-center">Figure One Piece</h2>
+    </head>
+    <div>
+        <img src="{% static 'images/myShowData/op1.PNG' %}" height="250" width="1000">
+    </div>
+    <div class="container mt-3 text-center">
+        <h3>ฟิกเกอร์ One piece </h3>
+        <p>ฟิกเกอร์ One piece การ์ตูนดังจากญี่ปุ่น</p>
+        <table class="table table-bordered">
+            <tr>
+                <th>ID</th>
+                <th>Images</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            {% for products in product %}
+                <tr>
+                    <td> {{ products.0 }} </td>
+                    <td>
+                        <img src="{{ products.1 }}"style="width: 200px;height: 200px">
+                    </td>
+                    <td> {{ products.2 }} </td>
+                    <td> {{ products.3 }} </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

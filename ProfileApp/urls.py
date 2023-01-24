@@ -13,5 +13,6 @@ urlpatterns = [
     path('Sale', views.Sale, name='Sale'),
     path('Idol', views.Idol, name='Idol'),
     path('Contact', views.Contact, name='Contact'),
+    path('myShowData/', views.myShowData, name='myShowData')
 
 ]

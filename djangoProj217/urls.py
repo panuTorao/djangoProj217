@@ -23,5 +23,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('ProfileApp/',include('ProfileApp.urls')),
     path('',views.Home,name='Home')
-
 ]
