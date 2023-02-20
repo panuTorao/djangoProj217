@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="text-center">
+    <br><br>
+    <p><strong>GoodsCategory : </strong>{{ Goods.GoodsCategory.gc_name }}</p>
+    <p><strong>gid : </strong>{{ Goods.gid }}</p>
+    <p><strong>name : </strong>{{ Goods.name }}</p>
+    <p><strong>brand : </strong>{{ Goods.brand }}</p>
+    <p><strong>model : </strong>{{ Goods.model }}</p>
+    <p><strong>price : </strong>{{ Goods.price }}</p>
+    <p><strong>net : </strong>{{ Goods.net }}</p>
+    <p><strong>property :</strong>{{ Goods.property }}</p>
+    </div>
+{% endblock %}

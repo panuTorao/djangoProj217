@@ -13,6 +13,9 @@ urlpatterns = [
     path('Sale', views.Sale, name='Sale'),
     path('Idol', views.Idol, name='Idol'),
     path('Contact', views.Contact, name='Contact'),
-    path('myShowData/', views.myShowData, name='myShowData')
+    path('myShowData/', views.myShowData, name='myShowData'),
+    path('InputProduct', views.InputProduct, name='InputProduct'),
+    path('ListProduct', views.listProduct, name='ListProduct'),
+
 
 ]

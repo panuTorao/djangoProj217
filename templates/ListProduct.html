@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+     <h1 class="text-center form-title">List Form.</h1>
+    <hr>
+    <table class="table text-center">
+        <tr>
+            <th>ID</th>
+            <th>Model</th>
+            <th>Case</th>
+            <th>Equipment</th>
+            <th>Ram</th>
+            <th>Memory</th>
+            <th>SmartWatch</th>
+            <th>Member</th>
+            <th>Sum</th>
+            <th>Discount</th>
+            <th>Total</th>
+        </tr>
+        {% for product in products %}
+            <tr>
+                <td>{{ product.id }}</td>
+                <td>{{ product.model }}</td>
+                <td>{{ product.Case }}</td>
+                <td>{{ product.equipment }}</td>
+                <td>{{ product.ram }}</td>
+                <td>{{ product.Memory }}</td>
+                <td>{{ product.SmartWatch }}</td>
+                <td>{{ product.imember }}</td>
+                <td>{{ product.isum|floatformat:2 }}</td>
+                <td>{{ product.idiscount|floatformat:2 }}</td>
+                <td>{{ product.iTotal|floatformat:2 }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
